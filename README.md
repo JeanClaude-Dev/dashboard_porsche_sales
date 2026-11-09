@@ -1,6 +1,6 @@
 # Porsche Sales Intelligence
 
-Dashboard interativa de vendas Porsche em um único arquivo HTML, preparada para GitHub Pages. A [dashboard](./index.html) reúne os dados sanitizados e a foto de fundo no próprio arquivo: não depende de bibliotecas ou serviços externos.
+Dashboard interativa de vendas Porsche em um único arquivo HTML. A [dashboard](./index.html) reúne os dados sanitizados e a foto de fundo no próprio arquivo: não depende de bibliotecas ou serviços externos.
 
 ## Perguntas de negócio
 
@@ -38,4 +38,3 @@ Exemplo aplicado: filtro de modelo **911 Dakar**. O recorte apresenta **3 vendas
 
 ![Dashboard com o filtro 911 Dakar aplicado](./evidencias/filtro-911-dakar.png)
 
-Captura feita na dashboard publicada. Use “Limpar filtros” para voltar às 100 vendas.
