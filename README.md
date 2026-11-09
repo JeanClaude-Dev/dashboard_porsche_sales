@@ -32,8 +32,8 @@ O desenvolvimento foi feito com assistência de IA no VS Code. Não foi utilizad
 
 ## Publicação
 
-- **Repositório público:** https://github.com/JeanClaude-Dev/dashboard_Porsche_Sales
-- **Dashboard publicada:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
+- **Repositório público:** https://github.com/JeanClaude-Dev/dashboard_porsche_sales
+- **Dashboard publicada:** https://jeanclaude-dev.github.io/dashboard_porsche_sales/
 - **Status:** publicação conferida no GitHub Pages; a página abre com os 100 registros e os filtros atualizam os indicadores e gráficos.
 
 O Pages publica a partir da branch `main` e da pasta raiz (`/(root)`).
@@ -46,4 +46,4 @@ O Pages publica a partir da branch `main` e da pasta raiz (`/(root)`).
 - [x] GitHub Pages ativo; endereço publicado e filtros conferidos.
 - [x] Link do repositório informado como entrega.
 
-**Ajuste recomendado:** o nome atual `dashboard_Porsche_Sales` é legível e sem acentos, mas contém maiúsculas e underscores. Para seguir literalmente a recomendação de usar minúsculas, renomeie-o para `dashboard-porsche-sales`; a URL do Pages também mudará.
+**Observação sobre o nome:** `dashboard_porsche_sales` está em minúsculas e sem acentos. O desafio recomenda também evitar underscores; se decidir trocar por `dashboard-porsche-sales`, lembre-se de atualizar estes links após a renomeação.
