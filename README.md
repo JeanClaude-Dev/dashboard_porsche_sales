@@ -33,6 +33,6 @@ O desenvolvimento foi feito com assistência de IA no VS Code, usando os arquivo
 
 ## Publicação
 
-**Dashboard:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
+**URL prevista da dashboard após ativar o GitHub Pages:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
 
-O repositório contém apenas os dois arquivos necessários para este desafio: `index.html` e `README.md`. Para ativar o GitHub Pages, selecione a branch principal e a pasta raiz em **Settings → Pages**, caso a publicação ainda não esteja ativa.
+O repositório contém apenas os dois arquivos necessários para este desafio: `index.html` e `README.md`. O GitHub Pages ainda precisa ser ativado em **Settings → Pages**, selecionando a branch `main` e a pasta raiz (`/(root)`). Depois que o GitHub concluir a publicação, o endereço acima ficará disponível.
