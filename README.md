@@ -1,38 +1,47 @@
 # Porsche Sales Intelligence
 
-Dashboard interativa de vendas Porsche, feita em HTML único e pronta para publicação no GitHub Pages. O arquivo [index.html](./index.html) funciona sem bibliotecas ou chamadas externas: os dados e a foto do banner estão incorporados no próprio HTML. A foto foi incorporada a partir do arquivo `image_porsche.jpg` fornecido na pasta de exemplos.
+Dashboard interativa de vendas Porsche em um único arquivo HTML, preparada para GitHub Pages. A [dashboard](./index.html) reúne os dados sanitizados e a foto de fundo no próprio arquivo: não depende de bibliotecas, serviços externos nem de outros arquivos do projeto.
 
 ## Perguntas de negócio
 
-1. **Quais modelos geram mais receita?** O ranking por receita ajuda a identificar onde o faturamento está concentrado, em vez de olhar apenas o número de unidades.
-2. **Em quais cidades vendemos mais?** O ranking de vendas por cidade, combinado com os filtros de estado e cidade, ajuda a explorar a distribuição geográfica.
-3. **Como os clientes pagam?** A distribuição por método de pagamento mostra o peso de cada modalidade no volume de vendas.
+1. **Quais modelos geram mais receita?** O ranking por faturamento ajuda a identificar onde a receita está concentrada, além de comparar somente o número de unidades.
+2. **Em quais cidades vendemos mais?** O volume por cidade ajuda a explorar a distribuição geográfica; os filtros de estado e cidade permitem analisar cada região.
+3. **Como os clientes pagam?** A participação dos métodos de pagamento ajuda a entender a composição das vendas por modalidade.
 
-Os indicadores no topo mostram vendas filtradas, receita, ticket médio e modelo mais vendido por quantidade. Os filtros de modelo, ano do modelo, estado, cidade e método de pagamento atualizam os indicadores e os três gráficos simultaneamente.
+Os indicadores no topo mostram quantidade de vendas, receita, ticket médio e modelo mais vendido por unidades. Os filtros de modelo, ano do modelo, estado, cidade e pagamento atualizam todos os indicadores e gráficos.
 
 ## Dados e tratamento
 
-- A fonte usada foi a planilha `8683bed0-cc33-4e06-bca9-04db9c31f9e2.xlsx`, fornecida na pasta `data/` junto ao desafio, que já contém colunas sanitizadas.
-- A dashboard usa `PorscheModelSanitized`, `ModelYearSanitized`, `SalesPriceSanitized`, `PayMethodSanitized`, `CitySanitized` e `StateSanitized`.
-- O preço é convertido para número durante a leitura da base; o ano do modelo é tratado como categoria para os filtros.
-- Nomes de clientes e vendedores, datas, quilometragem e demais campos que não respondem às perguntas escolhidas não são incorporados ao HTML.
-- Os 100 registros têm modelo, ano, preço, pagamento, cidade e estado preenchidos nas colunas sanitizadas. Os preços totalizam **US$ 12.827.800,50**, com ticket médio de **US$ 128.278,01**.
-- A planilha permanece na pasta `data/` como fonte local e não foi copiada para dentro do HTML. Antes de publicar o repositório, não inclua a planilha original: ela contém campos pessoais que não são necessários à análise.
+- A fonte foi a planilha sanitizada fornecida com o desafio. Ela foi usada localmente para montar os dados da dashboard, mas não foi incluída no repositório, pois contém campos pessoais que não são necessários à análise.
+- Foram utilizados somente os campos sanitizados de modelo, ano do modelo, preço, método de pagamento, cidade e estado. Nomes de clientes e vendedores, datas e quilometragem não foram incorporados ao HTML.
+- Os preços sanitizados foram convertidos para números decimais, e os anos do modelo para números inteiros; os anos são usados como filtro categórico na interface.
+- Os 100 registros possuem os seis campos selecionados preenchidos. A receita total é **US$ 12.827.800,50** e o ticket médio é **US$ 128.278,01**.
+- O repositório contém apenas os dois arquivos necessários ao projeto: `index.html` e `README.md`. A planilha de origem e os arquivos de exemplo não foram enviados.
 
-## Prompt e refinamento
+## Perguntas e especificação usada
 
-**Síntese do prompt de especificação da versão final** (registrada para documentar o escopo; não foi feita uma sessão separada no Canvas):
+**Síntese da especificação que orientou a implementação** (não é uma transcrição de uma sessão do ChatGPT Canvas):
 
-> Crie uma dashboard executiva em um único arquivo HTML, em português, a partir das colunas sanitizadas da planilha de vendas Porsche. Responda: quais modelos geram mais receita, em quais cidades há mais vendas e qual é a distribuição por método de pagamento. Inclua filtros interativos para modelo, ano do modelo, estado, cidade e pagamento; indicadores para vendas, receita, ticket médio e modelo líder; e gráficos que sejam recalculados por todos os filtros. Use um visual escuro e sofisticado, com vermelho e dourado como acentos, responsivo para celular e sem dependências externas. Não inclua nomes de clientes ou vendedores.
+> Crie uma dashboard executiva de vendas Porsche em um único arquivo HTML, em português, usando somente as colunas sanitizadas da planilha. Responda a três perguntas: quais modelos geram mais receita, em quais cidades há mais vendas e como os clientes pagam. Inclua filtros para modelo, ano do modelo, estado, cidade e método de pagamento; indicadores para quantidade de vendas, receita, ticket médio e modelo líder; e gráficos atualizados por todos os filtros. Use um visual escuro e sofisticado, com vermelho e dourado, responsivo para celular e sem dependências externas. Não inclua nomes de clientes ou vendedores.
 
-Durante a implementação, o escopo foi definido para priorizar três perguntas complementares — receita, presença geográfica e pagamento — em vez de acumular gráficos sem uma decisão associada. O ranking de modelos foi ordenado por receita (não só por unidades), a análise de localização usa vendas por cidade e os filtros atuam em todos os indicadores e gráficos. A implementação usa HTML, CSS e JavaScript nativos para manter o artefato em arquivo único.
+O escopo foi refinado para combinar perguntas complementares de receita, distribuição geográfica e pagamento. O ranking de modelos passou a destacar receita, além do volume de vendas; os filtros foram aplicados a todos os indicadores e gráficos; e a imagem ilustrativa foi incorporada ao HTML para manter o arquivo autônomo.
 
 ## Ferramenta
 
-O desenvolvimento foi feito com assistência de IA no VS Code, usando os arquivos do desafio e o exemplo visual como referência. Não foi usado ChatGPT Canvas nem um agente próprio com skill.
+O desenvolvimento foi feito com assistência de IA no VS Code. Não foi utilizado ChatGPT Canvas nem um agente próprio com skill. O exemplo fornecido serviu de referência visual, e a implementação final foi construída e validada localmente.
 
 ## Publicação
 
-**URL prevista da dashboard após ativar o GitHub Pages:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
+- **Repositório público:** https://github.com/JeanClaude-Dev/dashboard_Porsche_Sales
+- **Endereço previsto da dashboard após ativar o GitHub Pages:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
+- **Status:** o conteúdo foi enviado para a branch `main`, mas o GitHub Pages ainda não está ativado; portanto, o endereço da dashboard ainda pode retornar 404.
 
-O repositório contém apenas os dois arquivos necessários para este desafio: `index.html` e `README.md`. O GitHub Pages ainda precisa ser ativado em **Settings → Pages**, selecionando a branch `main` e a pasta raiz (`/(root)`). Depois que o GitHub concluir a publicação, o endereço acima ficará disponível.
+Para publicar, abra **Settings → Pages**, selecione **Deploy from a branch**, escolha a branch `main` e a pasta `/(root)`, e salve. Após o GitHub concluir a publicação, confirme que o endereço acima abre e que os filtros funcionam.
+
+## Conferência antes da entrega
+
+- [x] Três perguntas de negócio, indicadores de topo e filtros interativos.
+- [x] `index.html` em arquivo único, sem dependências externas; dados pessoais excluídos.
+- [x] Repositório público com somente `index.html` e `README.md`.
+- [ ] Ativar o GitHub Pages e confirmar que a dashboard abre no endereço publicado.
+- [ ] Enviar o link do repositório como entrega, não apenas o link da dashboard.
