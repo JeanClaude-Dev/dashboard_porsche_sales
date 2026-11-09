@@ -33,15 +33,17 @@ O desenvolvimento foi feito com assistência de IA no VS Code. Não foi utilizad
 ## Publicação
 
 - **Repositório público:** https://github.com/JeanClaude-Dev/dashboard_Porsche_Sales
-- **Endereço previsto da dashboard após ativar o GitHub Pages:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
-- **Status:** o conteúdo foi enviado para a branch `main`, mas o GitHub Pages ainda não está ativado; portanto, o endereço da dashboard ainda pode retornar 404.
+- **Dashboard publicada:** https://jeanclaude-dev.github.io/dashboard_Porsche_Sales/
+- **Status:** publicação conferida no GitHub Pages; a página abre com os 100 registros e os filtros atualizam os indicadores e gráficos.
 
-Para publicar, abra **Settings → Pages**, selecione **Deploy from a branch**, escolha a branch `main` e a pasta `/(root)`, e salve. Após o GitHub concluir a publicação, confirme que o endereço acima abre e que os filtros funcionam.
+O Pages publica a partir da branch `main` e da pasta raiz (`/(root)`).
 
 ## Conferência antes da entrega
 
 - [x] Três perguntas de negócio, indicadores de topo e filtros interativos.
 - [x] `index.html` em arquivo único, sem dependências externas; dados pessoais excluídos.
 - [x] Repositório público com somente `index.html` e `README.md`.
-- [ ] Ativar o GitHub Pages e confirmar que a dashboard abre no endereço publicado.
-- [ ] Enviar o link do repositório como entrega, não apenas o link da dashboard.
+- [x] GitHub Pages ativo; endereço publicado e filtros conferidos.
+- [x] Link do repositório informado como entrega.
+
+**Ajuste recomendado:** o nome atual `dashboard_Porsche_Sales` é legível e sem acentos, mas contém maiúsculas e underscores. Para seguir literalmente a recomendação de usar minúsculas, renomeie-o para `dashboard-porsche-sales`; a URL do Pages também mudará.
